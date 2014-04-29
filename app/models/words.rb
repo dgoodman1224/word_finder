@@ -2,13 +2,11 @@ class Words
 	def initialize
 		@words = words
 		@canned_words = init_can(@words)
-		p @canned_words
 	end
 
 	def words
 		file = File.open("../../word_list.txt")
 		words = Array.new
-		counter = 0
 		file.each_line do |line|
 			words << line.chomp
 		end
@@ -31,8 +29,12 @@ class Words
 	end
 
 	def find(word)
+		canned = can(word)
+		p canned
 		@canned_words.include?(can(word)) ? @words[@canned_words.index(can(word))] : false
 	end
+
 end
 
 scrabble = Words.new
+p scrabble.find("bat")
