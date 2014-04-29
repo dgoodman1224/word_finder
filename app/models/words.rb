@@ -30,11 +30,14 @@ class Words
 
 	def find(word)
 		canned = can(word)
-		p canned
-		@canned_words.include?(can(word)) ? @words[@canned_words.index(can(word))] : false
+		results = []
+		@canned_words.each_with_index do |word, index|
+			results << index if word == canned
+		end
+		results.map {|index| @canned_words[index] }
 	end
 
 end
 
 scrabble = Words.new
-p scrabble.find("bat")
+p scrabble.find("race")
