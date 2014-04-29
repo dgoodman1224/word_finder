@@ -1,4 +1,3 @@
-require_relative '../find.rb'
 require 'rspec'
 	describe Words do 
 		context "Can return a word" do 
