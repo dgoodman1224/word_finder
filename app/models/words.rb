@@ -40,4 +40,4 @@ class Words
 end
 
 scrabble = Words.new
-p scrabble.find("race")
+p scrabble.find("aeprs")
