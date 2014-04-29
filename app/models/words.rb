@@ -1,23 +1,23 @@
-require 'rspec'
 class Words
 	def initialize
 		@words = words
 		@canned_words = init_can(@words)
+		p @canned_words
 	end
 
 	def words
-		file = File.open("brit-a-z.txt")
+		file = File.open("../../word_list.txt")
 		words = Array.new
 		counter = 0
 		file.each_line do |line|
-			words << line
+			words << line.chomp
 		end
-		p words
+		words
 	end
 
 	def init_can(input_array)
 		input_array.map do |word|
-			word.split('').sort.join
+		  word.split('').sort.join
 		end
 	end
 
@@ -35,4 +35,4 @@ class Words
 	end
 end
 
-thing = Words.new
+scrabble = Words.new
