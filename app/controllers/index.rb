@@ -1,5 +1,4 @@
 get '/' do
-	#@words = Words.new.parse_file
   erb :index
 end
 
