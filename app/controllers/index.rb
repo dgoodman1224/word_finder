@@ -4,5 +4,7 @@ get '/' do
 end
 
 post '/results' do
+	@words = Words.where("can_word = ?", Words.can(params[:letters]))
+	p @words
 	erb :results
 end
