@@ -1,8 +1,5 @@
-def can(word)
-word.split('').sort.join
-end
 
 file = File.open("word_list.txt")
 file.each_line do |line|
-	Words.create({word: line.chomp, can_word: can(line.chomp)})
+	Words.create({word: line.chomp, can_word: Words.can(line.chomp), value: Words.value(line.chomp)})
 end
