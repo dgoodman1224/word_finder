@@ -1,6 +1,10 @@
 Here are the results:
 <div class = "words">
-<% @words.each do |thing| %> <br>
-	<p> <%= thing.word %> </p>
-<% end %>
+	<% if @words != [] %>
+		<% @words.each do |thing| %> <br>
+			<p> <%= thing.word %> </p>
+	<% end %>
+	<% else %>
+		<%= erb :_no_matches %>
+	<% end %>
 </div>
