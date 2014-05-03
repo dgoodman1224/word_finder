@@ -3,3 +3,11 @@
 	<input name="letters" type="text"> What letters do you have?  Use $ For a blank tile. </input>
 	<button type = "submit" >Find me words</button>
 </form>
+
+<div id = "found_matches">
+	<% if @words %>
+		<% @words.each do |word| %>
+			<%= word %> <%= word.value %>
+		<% end %>
+	<% end %>
+</div>
