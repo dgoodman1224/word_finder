@@ -9,6 +9,15 @@
 	margin-left: 2em;
 }
 
+#index {
+	margin-left: 2em;
+}
+
 th {
   text-align: left;
+}
+
+#bart_cheating {
+	text-align: center;
+	margin-top: 5em;
 }
