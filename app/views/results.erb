@@ -1,8 +1,8 @@
 Here are the results:
 <div class = "words">
 	<% if @words != [] %>
-		<% @words.each do |thing| %> <br>
-			<p> <%= thing.word %> </p>
+		<% @words.each do |word| %> <br>
+			<p> <%= word.word %>   -   <%= word.value %> points </p>
 	<% end %>
 	<% else %>
 		<%= erb :_no_matches %>
