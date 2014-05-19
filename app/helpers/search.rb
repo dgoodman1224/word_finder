@@ -41,8 +41,8 @@ module Search
 		26.times do
 			array_of_letters << alph[counter]
 			new_counter = 0
-			new_alph = ('a'..'z').to_a
-			26.times do
+			new_alph = (alph[counter]..'z').to_a
+			(26-counter).times do
 				array_of_letters << new_alph[new_counter]
 				new_counter += 1
 				canned = can(array_of_letters)
