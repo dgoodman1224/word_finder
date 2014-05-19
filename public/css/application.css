@@ -4,7 +4,10 @@
   padding: 0px 20px 20px 20px;
   border: 1px dotted black;
 }
-
+body {
+	background-color: black;
+	color: gray;
+}
 .words {
 	margin-left: 2em;
 }
@@ -17,7 +20,37 @@ th {
   text-align: left;
 }
 
+#results {
+	margin-left: 2em;
+}
+
+.words img {
+	display: inline-block;
+	right: 0;
+	margin-right: 5em;
+	float: right;
+}
+
+.words h2 {
+	margin-left: 3em;
+}
+
+.words p {
+	margin-left: 9em;
+}
+
 #bart_cheating {
 	text-align: center;
 	margin-top: 5em;
+}
+
+#no_matches {
+	text-align: center;
+}
+
+#no_matches img {
+	height: 20em;
+	right: 0;
+	margin-right: 5em;
+
 }

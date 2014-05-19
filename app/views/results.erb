@@ -1,10 +1,12 @@
-Here are the results:
-<div class = "words">
-	<% if @words != [] %>
-		<% @words.each do |word| %> <br>
-			<p> <%= word.word %>   -   <%= word.value %> points </p>
-	<% end %>
-	<% else %>
-		<%= erb :_no_matches %>
-	<% end %>
-</div>
+	<div class = "words">
+		<% if @words != [] %>
+			<h1>Use every tile like a pro, or trade them in</h1>
+			<h2> Here are the results: </h2>
+		<img src="http://assets.nydailynews.com/polopoly_fs/1.1360286!/img/httpImage/image.jpg_gen/derivatives/landscape_635/usa-spellingbee-winner.jpg">
+			<% @words.each do |word| %> <br>
+				<p class='word'> <%= word.word %> - <%= word.value %> points </p>
+		<% end %>
+		<% else %>
+			<%= erb :_no_matches %>
+		<% end %>
+	</div>
