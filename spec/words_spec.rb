@@ -1,4 +1,6 @@
 require_relative 'spec_helper'
+require_relative '../app/models/words'
+require_relative '../app/helpers/search'
 
 describe Words do
 	context "Words model has variables" do
