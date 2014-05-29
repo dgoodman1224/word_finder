@@ -1,4 +1,4 @@
-### Word Finer
+### Word Finder
 
 A web app to allow people to cheat in word type games.  Text Twist or words with friends.
 As a user you can input your letters and see a list of possible words to make.
