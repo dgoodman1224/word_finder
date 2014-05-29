@@ -29,6 +29,7 @@ th {
 	right: 0;
 	margin-right: 5em;
 	float: right;
+	position: fixed;
 }
 
 .words h2 {
@@ -51,6 +52,6 @@ th {
 #no_matches img {
 	height: 20em;
 	right: 0;
-	margin-right: 5em;
+	margin-right: 25em;
 
 }
