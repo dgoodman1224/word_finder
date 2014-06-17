@@ -55,3 +55,18 @@ th {
 	margin-right: 25em;
 
 }
+
+#home_button_results {
+  color: black;
+  width: 100%;
+ 	margin-top: 3em;
+ 	position: fixed;
+  right: 0;
+  text-align: center;
+}
+
+#home_button_none {
+	top: 0;
+	right: 5em;
+	float: right;
+}
